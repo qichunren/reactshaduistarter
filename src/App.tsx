@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 import { Button } from "@/components/ui/button"
+import { Slider } from "@/components/ui/slider"
 
 import {
   Dialog,
@@ -29,7 +30,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className="text-3xl">Vite + React</h1>
+      <h1 className="my-4 text-3xl">Vite + React</h1>
+      <Slider defaultValue={[33]} max={100} step={1} />
       <div className="card my-4 bg-blue-400 p-4 rounded-lg flex gap-4">
         <button onClick={() => setCount((count) => count + 1)} className='mr-4'>
           count is {count}
