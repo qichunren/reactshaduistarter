@@ -6,8 +6,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
+    <div className="container mx-auto p-4">
+      <div className="flex gap-4">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -15,8 +15,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+      <h1 className="text-3xl">Vite + React</h1>
+      <div className="card my-4 bg-blue-400 p-4 rounded-lg">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -27,7 +27,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 
